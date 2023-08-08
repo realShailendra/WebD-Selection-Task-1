@@ -542,6 +542,7 @@ button.course-title{
    padding-right: 0rem;
    margin-top: 2rem;
    width: 83%;
+      color:red;
    }
    .question-links{
        width: 50%;
@@ -613,6 +614,9 @@ button.course-title{
    button.course-title{
        border-radius: 0px;
        
+   }
+   .question-links a{
+      color:red;
    }
 }
 
