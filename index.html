@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+ <!--  <link rel="stylesheet" href="styles.css">-->
+   <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style5.css">-->
+ <!--  <script src="js/script.js"></script>-->
+
+
+</head>
+
+<body class="flex">
+
+   <header class="header">
+
+      <section class="flexi">
+
+         <a href="#" class="logo">GeekX</a>
+
+         <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Updates</a>
+            <a href="#">Scores</a>
+            <a href="#">Contact</a>
+         </nav>
+
+         <div class="icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+         </div>
+
+
+
+      </section>
+
+   </header>
+   <div class="toggle"></div>
+
+
+
+
+   <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+      <p>Questions Answered</p>
+  </div>
+
+
+
+
+  
+
+   <div id="data-container"></div>
+   
+  <!--<div class="toggle"></div>-->
+
+
+
+  
+
+
+
+   <footer class="footer">
+
+
+
+      <div class="credit">created By <span>Shailendra Gupta Productions 2023</span> | all rights reserved!</div>
+
+   </footer>
+
+
+
+
+ 
+   <script src="js/scriptinging.js"></script>
+   <script>
+      const body = document.querySelector("body"),
+      toggle=document.querySelector(".toggle");
+      let getMode=localStorage.getItem("mode");
+      if(getMode && getMode === "dark"){
+         body.classList.add("dark");
+         toggle.classList.add("active");
+      }
+      toggle.addEventListener("click", ()=>{
+         body.classList.toggle("dark");
+         if(!body.classList.contains("dark")){
+            return localStorage.setItem("mode", "light");
+         }
+         localStorage.setItem("mode", "dark");
+      })
+
+
+
+
+
+
+      toggle.addEventListener("click", ()=>toggle.classList.toggle("active"));
+   </script>
+  
+  
+</body>
+
+</html>

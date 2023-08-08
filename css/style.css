@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --yellow:#fed330;
+   --red:#e74c3c;
+   --white:#fff;
+   --black:#222;
+   --light-color:#777;
+   --border:.2rem solid var(--black);
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: .2s linear;
+}
+
+*::selection{
+   background-color: var(--yellow);
+   color:var(--black);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: var(--yellow);
+   border-radius: 5rem;
+}
+
+section{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:2rem;
+}
+
+
+
+
+.title{
+   text-align: center;
+   margin-bottom: 3rem;
+   font-size: 4rem;
+   color:var(--black);
+   text-transform: uppercase;
+   text-decoration: underline;
+   text-underline-offset: 1rem;
+}
+
+.heading{
+   background-color: var(--black);
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;;
+   flex-flow: column;
+   min-height: 20rem;
+}
+
+.heading h3{
+   font-size: 4rem;
+   color:var(--white);
+   text-transform: capitalize;
+}
+
+.heading p a{
+   font-size: 2rem;
+   color:var(--yellow);
+}
+
+.heading p span{
+   font-size: 2rem;
+   color:var(--light-color);
+}
+
+.heading p a:hover{
+   color:var(--white);
+}
+
+.header{
+   position: sticky;
+   top:0; left:0; right: 0;
+   z-index: 1000;
+   border-bottom: var(--border);
+   background-color: var(--white);
+}
+
+.header .flexi{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+.header .flexi .logo{
+   font-size: 2.5rem;
+   color:var(--black);
+}
+
+.header .flexi .navbar a{
+   margin:0 1rem;
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.header .flexi .navbar a:hover{
+   color:var(--yellow);
+}
+
+.header .flexi .icons > *{
+   font-size: 2.5rem;
+   color:var(--black);
+   margin-left: 1.5rem;
+   cursor: pointer;
+}
+
+.header .flexi .icons > *:hover{
+   color:var(--yellow);
+}
+
+@keyframes fadeIn {
+   0%{
+      transform: translateY(1rem);
+   }
+}
+
+
+#menu-btn{
+   display: none;
+}
+
+
+
+.footer .credit{
+   background-color: var(--black);
+   text-align: center;
+   padding:3rem 2rem;
+   font-size: 2rem;
+   color:var(--white);
+   /* padding-bottom: 10rem; */
+}
+
+.footer .credit span{
+   color:var(--yellow);
+}
+
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #menu-btn{
+      display: inline-block;
+   }
+
+   .header .flexi .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      border-top: var(--border);
+      border-bottom: var(--border);
+      background-color: var(--white);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   .header .flexi .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .flexi .navbar a{
+      display: block;
+      margin:2rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .title{
+      font-size: 3rem;
+   }
+
+   .header .flexi .logo{
+      font-size: 2rem;
+   }
+
+   .products .box-container{
+      grid-template-columns: 1fr;
+   }
+  
+
+}
+.container{
+   background: aqua;
+   height: 100vh;
+   width: 100%;
+   color: black;
+}
+thead{
+   background: black;
+   color: white;
+}
+#wrapper {
+   margin: 0 auto;
+   padding: 0px;
+   text-align: center;
+   width: 995px;
+}
+
+#wrapper h1 {
+   margin-top: 50px;
+   font-size: 45px;
+   color: #585858;
+}
+
+#wrapper h1 p {
+   font-size: 20px;
+}
+
+#table_detail {
+   width: 500px;
+   text-align: left;
+   border-collapse: collapse;
+   color: #2E2E2E;
+   border: #A4A4A4;
+}
+
+#table_detail tr:hover {
+   background-color: #F2F2F2;
+}
+
+#table_detail .hidden_row {
+   display: none;
+}
+#wrapper{
+   height: 80vh;
+   width: 80%;
+   margin-top: 5rem;
+}
+#cv{
+   align-items: center;
+   font-size: 50px;
+   padding-left: 40%;
+   background: white;
+   color: black;
+}
+#table_detail{
+   margin-left: 25%;
+}
+#userData td{
+   font-size: 20px;
+   padding: 4rem;
+   font-weight: 900;
+   width: 100%;
+}
+.accordion {
+   background-color: #eee;
+   color: #444;
+   cursor: pointer;
+   padding: 18px;
+   width: 100%;
+   text-align: left;
+   border: none;
+   outline: none;
+   transition: 0.4s;
+ }
+ 
+ /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+ .active, .accordion:hover {
+   background-color: #ccc;
+ }
+ 
+ /* Style the accordion panel. Note: hidden by default */
+ .panel {
+   padding: 0 18px;
+   background-color: white;
+   display: none;
+   overflow: hidden;
+ }
+ #quiz{
+   padding: 2rem;
+   font-size: 20px;
+ }
+table{
+   margin-left: 20%;
+}
+#data-container{
+   margin-top: 6rem;
+   margin-left: 5%;
+   width: 90%;
+   
+   line-height: 2rem;
+   font-size: 40px;
+   font-weight: 500;
+}
+button.course-title{
+   font-size: 30px;
+   font-weight: 500;
+   font-family: 'Rubik';
+   line-height: 8rem;
+   display: inline-block;
+   width: 100%;
+   background-color: var(--yellow);
+   color: black;
+   margin-top: 2rem;
+}
+button.course-title:hover{
+   background-color: 	#FFB6C1;
+   color: black;
+}
+#data-container h3{
+   font-size: 28px;
+   display: inline-block;
+   width: 50%;
+   line-height: 8rem;
+   margin-left: 4rem;
+   font-family: 'sans-serif';
+}
+.question-links{
+   width: 50%;
+   
+   display: inline-block;
+   margin-left: 2%;
+   margin-top: 0;
+   margin-top: 24px;
+}
+.question-links a{
+   font-size: 21px;
+   color: black;
+   padding-right: 2rem;
+   margin-top: 2rem;
+   color: black;
+   margin-left: 2rem;
+}
+#data-container li{
+   list-style: none;
+   
+}
+.question{
+   display: flex;
+}
+.footer .credit{
+   margin-top: 5rem;
+}
+
+
+
+
+
+
+
+
+
+body{
+   transition: all 0.3s ease-in-out;
+   overflow-y: hidden;
+}
+.toggle{
+   height: 45px;
+   width: 112px;
+   background-color: white;
+   border: 6px solid black;
+   position: relative;
+   border-radius: 100px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   bottom: -4rem;
+   margin-left: 35%;
+}
+.toggle::before {
+   content: "";
+   position: absolute;
+   height: 27px;
+   width: 27px;
+   background: #fed330;
+   border-radius: 50%;
+   top: 51%;
+   left: 15px;
+   transform: translateY(-50%);
+   transition: all 0.3 ease-in-out;
+}
+.toggle.active::before{
+   background-color: #18191a;
+   left: calc(100% - 27px - 15px);
+
+}
+body.dark{
+   background-color: #18191a;
+   color: white;
+}
+body.dark a{
+   color: white;
+}
+body.dark p{
+   color: #18191a;
+}
+
+
+
+
+
+
+
+
+
+.question-checkbox{
+   height: 20px;
+   width: 20px;
+   margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progress-container {
+   background-color: #f0f0f0;
+   height: 40px;
+   width: 20%;
+   margin-bottom: 10px;
+   margin-left: 50%;
+   border: 2px solid black;
+   border-radius: 18px;
+}
+
+.progress-bar {
+   background-color: #4caf50;
+   height: 100%;
+   width: 0;
+   border-radius: 18px;
+}
+
+button.course-title{
+   border-radius: 20px;
+   
+}
+
+
+
+
+
+.question.checked {
+   background-color: #00FF7F;
+}
+
+p{
+   font-size: 24px;
+   margin-left: 0rem;
+   font-weight: 500;
+   margin-top: -3.3rem;
+   margin-left: 2rem;
+}
+
+button.course-title{
+   font-size: 26px;
+}
+.question-links a {
+   font-size: 21px;
+   padding-right: 2rem;
+   margin-top: 2rem;
+   color: black;
+   margin-left: 2rem;
+   color: red;
+}
+
+
+
+@media screen and (min-width: 275px) and (max-width: 600px){
+   .toggle{
+       margin-left: 8%;
+   height: 40px;
+   width: 96px;
+   top: 4rem;
+   }
+   .toggle::before {
+       height: 25px;
+       width: 25px;
+       left: 10px;
+   }
+   .toggle.active::before{
+       left: calc(100% - 25px - 10px);
+   }
+   #data-container{
+       margin-top: 3rem;
+       
+   }
+   button.course-title{
+       font-size: 20px;
+   line-height: 4rem;
+   padding: 14px;
+   }
+   #data-container h3{
+       font-size: 19px;
+       line-height: 4rem;
+       margin-top: 2rem;
+      
+       width: 95%;
+       margin-left: 1rem;
+   }
+   .question-links a{
+       font-size: 15px;
+       display: inline-block;
+   font-size: 25px;
+   color: black;
+   padding-right: 0rem;
+   margin-top: 2rem;
+   width: 83%;
+   }
+   .question-links{
+       width: 50%;
+   display: inline-block;
+   margin-left: -95%;
+   margin-top: 0;
+   margin-top: 51px;
+   }
+   .question-links a{
+       display: inline-block;
+   font-size: 18px;
+   color: black;
+   padding-right: 0rem;
+   margin-top: 1rem;
+   width: 95%;
+   line-height: 3rem;
+   }
+   .progress-container{
+       height: 36px;
+   width: 54%;
+   
+   margin-left: 43%;
+   margin-left: 39%;
+   margin-top: -0.8rem;
+   }
+   .progress-container p{
+       font-size: 16px;
+   width: 85%;
+   }
+   button.course-title{
+       font-size: 19px;
+   }
+   button.course-title{
+       border-radius: 0px;
+       
+   }
+   
+}
+@media screen and (min-width: 602px) and (max-width: 1025px){
+   .toggle{
+       margin-left: 10%;
+       height: 56px;
+       width: 138px;
+       top: 6rem;
+   }
+   .toggle::before {
+       height: 30px;
+       width: 30px;
+       left: 10px;
+   }
+   .toggle.active::before{
+       left: calc(100% - 30px - 10px);
+   }
+   .progress-container{
+       height: 49px;
+       width: 55%;
+       margin-left: 43%;
+       margin-left: 39%;
+       margin-top: 0rem;
+   }
+   .progress-container p{
+       font-size: 28px;
+   width: 85%;
+   margin-top: -4.4rem;
+   }
+   button.course-title{
+       font-size: 26px;
+   }
+   button.course-title{
+       border-radius: 0px;
+       
+   }
+}
+
+
+#data-container li {
+   list-style: none;
+   margin-top: 2rem;
+}
