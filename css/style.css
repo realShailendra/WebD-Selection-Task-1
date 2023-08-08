@@ -355,7 +355,7 @@ button.course-title:hover{
    color: black;
    padding-right: 2rem;
    margin-top: 2rem;
-   color: black;
+   color: red;
    margin-left: 2rem;
 }
 #data-container li{
@@ -559,6 +559,7 @@ button.course-title{
    margin-top: 1rem;
    width: 95%;
    line-height: 3rem;
+      color:red;
    }
    .progress-container{
        height: 36px;
