@@ -618,6 +618,8 @@ button.course-title{
    }
    .question-links a{
       color:red;
+      padding-right: 0rem;
+      line-height: 3rem;
    }
 }
 
